@@ -9,7 +9,7 @@ messages = []
 def add_messages(username, message):
     """Add messages to the `messages` list"""
     now = datetime.now().strftime("%H:%M:%S")
-    messages_dict = {"timestamp": now, "from": username, "message": message}
+    message_dict = {"timestamp": now, "from": username, "message": message}
     messages.append(message_dict)
 
 
